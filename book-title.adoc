@@ -1,0 +1,52 @@
+= Book Title
+Dr. Bambang Purnomosidi D. P. <bambangpdp@gmail.com>
+v0.0.1-rev-{localdatetime}
+:doctype: book
+:toc:
+:toc-title: Table of Contents
+:table-caption: Table
+:source-highlighter: rouge
+:sectnums:
+:description: This template is only a template. This template is only a template. \
+              This template is only a template. This template is only a template. \
+              This template is only a template. This template is only a template.
+:sourcedir: src
+:includedir: contents
+:imagesdir: images
+:chapter-label: Chapter
+:figure-caption: Figure 
+:icons: font
+////
+Use this if you create a full cover in one page
+:front-cover-image: image::./images/title_page.png[]
+////
+//:title-logo-image: images/logo-zimera.png
+
+
+[preface]
+= Preface 
+
+Some text to describe preface of the book. Some text to describe preface of the book. Some text to describe preface of the book. Some text to describe preface of the book. Some text to describe preface of the book.  Some text to describe preface of the book. Some text to describe preface of the book.
+
+= Part I: Title of Part I
+
+[partintro]
+--
+Describe part I of the book briefly here.
+--
+
+include::{includedir}/01-01-title.adoc[]
+
+include::{includedir}/01-02-title.adoc[]
+
+= Part II: Title of Part II
+
+[partintro]
+--
+Describe part II of the book briefly here.
+--
+
+include::{includedir}/02-01-title.adoc[]
+
+include::{includedir}/02-02-title.adoc[]
+
