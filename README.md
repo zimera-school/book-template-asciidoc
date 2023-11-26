@@ -10,6 +10,17 @@ This template just need Ruby, Asciidoctor, and `asciidoctor-pdf`. Do this to ins
 $ gem install --user-install asciidoctor asciidoctor-pdf
 ```
 
+Currently, this template uses:
+
+```bash
+$ gem list --local | grep asciidoctor
+asciidoctor (2.0.20)
+asciidoctor-bibliography (0.11.0)
+asciidoctor-bibtex (0.8.0)
+asciidoctor-pdf (2.3.9)
+$
+```
+
 ## Compiling to PDF
 
 Use `Makefile`:
@@ -57,6 +68,17 @@ include::../{sourcedir}/ch01/ferris/src/main.rs[]
 <1> Explanation - callout for number 1
 <2> Explanation - callout  for number 2
 ```
+
+## More
+
+If you want to change the layout (fonts, logo, etc):
+
+1. See `Makefile` for command line / shell command to build pdf file. It uses pdf-theme.
+2. The theme resides in `resources/themes/` and uses this filename pattern (see also `Makefile`):
+
+        *pdf-theme-name-at-Makefile*-theme.yml
+
+3. See https://docs.asciidoctor.org/pdf-converter/latest/theme/ for more information on creating your own theme.
 
 ## License
 

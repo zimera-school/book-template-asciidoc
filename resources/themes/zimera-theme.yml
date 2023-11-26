@@ -25,7 +25,7 @@ base:
   line-height: $base-line-height-length / $base-font-size
   border_radius: 4
 vertical-spacing: $base-line-height-length
-literal:
+codespan:
   font_color: B12146
   font_family: M+ 1mn
 code:
@@ -54,7 +54,7 @@ heading:
   margin-bottom: $vertical-spacing
 link:
   font-color: #002FA7
-outline-list:
+list:
   indent: $base-font-size * 1.5
 footer:
   height: $base-line-height-length * 2.5
@@ -74,5 +74,5 @@ title-page:
   font-size: 14
   font-style: bold
   logo:
-    image: image:{docdir}/images/logo.png[width=200]
+    image: image:{docdir}/images/logo-zimera-corp.png[width=200]
     top: 5%
