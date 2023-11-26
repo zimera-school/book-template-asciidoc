@@ -18,12 +18,16 @@ page:
   margin: [0.75in, 1in, 0.75in, 1in]
   size: Letter
 base:
-  font-color: #333333
-  font-family: Times-Roman
+  text_align: justify
+  font-color: 333333
+  #font-family: Times-Roman
+  font-family: Noto Serif
   font-size: 12
   line-height-length: 17
   line-height: $base-line-height-length / $base-font-size
   border_radius: 4
+  border_color: EEEEEE
+  border_width: 0.5
 vertical-spacing: $base-line-height-length
 codespan:
   font_color: B12146
