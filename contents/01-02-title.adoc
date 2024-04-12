@@ -6,7 +6,7 @@ This is just a statement. This is just a statement. This is just a statement. Th
 
 === See the Source Code Here
 
-[source,rust]
+[source,rust,linenums]
 .src/01-02/hello-plain/hello.rs
 ----
 include::../{sourcedir}/01-02/hello-plain/hello.rs[]

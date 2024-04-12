@@ -68,7 +68,7 @@ You may also change the top directory name for *images* in `book-title.adoc` des
 * In asciidoc, use this source code (example in Rust - `ferris` is project name inside chapter 01):
 
 ```
-[source,rust]
+[source,rust,linenums]
 ----
 include::../{sourcedir}/ch01/ferris/src/main.rs[]
 ----
@@ -81,6 +81,8 @@ Again, you may also change the top directory name for *source code* in `book-tit
 ```
 :sourcedir: src
 ```
+
+**Note**: remove **linenums** in **[source,rust,linenums]** if you don't want to use line numbering in source code.
 
 ## More
 
