@@ -6,6 +6,9 @@ v0.0.1-rev-{localdatetime}
 :toc-title: Table of Contents
 :table-caption: Table
 :source-highlighter: rouge
+// style:
+// https://github.com/rouge-ruby/rouge/tree/HEAD/lib/rouge/themes
+:rouge-style: igor_pro
 :sectnums:
 :description: This template is only a template. This template is only a template. \
               This template is only a template. This template is only a template. \
