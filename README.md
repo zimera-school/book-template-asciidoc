@@ -7,17 +7,17 @@ This book serves as a book template. To create a book, just clone this repo and 
 This template just need Ruby, Asciidoctor, and `asciidoctor-pdf`. Do this to install them (you should [install Ruby first](https://www.ruby-lang.org/en/downloads/)):
 
 ```
-$ gem install --user-install asciidoctor asciidoctor-pdf
+$ gem install --user-install asciidoctor asciidoctor-pdf asciidoctor-bibliography asciidoctor-bibtex
 ```
 
 Currently, this template uses:
 
 ```bash
 $ gem list --local | grep asciidoctor
-asciidoctor (2.0.20)
+asciidoctor (2.0.22)
 asciidoctor-bibliography (0.11.0)
-asciidoctor-bibtex (0.8.0)
-asciidoctor-pdf (2.3.9)
+asciidoctor-bibtex (0.9.0)
+asciidoctor-pdf (2.3.15)
 $
 ```
 
@@ -55,9 +55,16 @@ image::ch01/myImage.png[]
 ... lorem sum dolor lorem sum dolor lorem sum dolor <<#img-ch01-01>> ...
 ```
 
+You may also change the top directory name for *images* in `book-title.adoc` description:
+
+```
+:imagesdir: images
+```
+
 ### Source Code
 
 * Put source code inside [src](src/). Also, you may manage whatever you like with how you put your source code (or maybe also depends on programming language that you use. for example in Rust you use `src/main.rs` inside a project, or in Java you use `src/main/java/package/App.java`. It's better if you put chapter number like `ch01` for chapter 01.
+* Ruby uses its own gem for syntax highlighting. This template uses **Rouge**, so you have to install it first using: `gem install rouge --user-install`.
 * In asciidoc, use this source code (example in Rust - `ferris` is project name inside chapter 01):
 
 ```
@@ -67,6 +74,12 @@ include::../{sourcedir}/ch01/ferris/src/main.rs[]
 ----
 <1> Explanation - callout for number 1
 <2> Explanation - callout  for number 2
+```
+
+Again, you may also change the top directory name for *source code* in `book-title.adoc` description:
+
+```
+:sourcedir: src
 ```
 
 ## More
