@@ -80,3 +80,7 @@ title-page:
   logo:
     image: image:{docdir}/images/logo-zimera-corp.png[width=200]
     top: 5%
+caption:
+  align: center
+  font_size: $base_font_size * 0.95
+  font_style: italic
