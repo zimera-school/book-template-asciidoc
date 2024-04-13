@@ -16,7 +16,7 @@ v0.0.1-rev-{localdatetime}
 :sourcedir: src
 :includedir: contents
 :imagesdir: images
-:chapter-label: Chapter
+:chapter-signifier: Chapter
 :figure-caption: Figure 
 :icons: font
 ////
