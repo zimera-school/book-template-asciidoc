@@ -25,3 +25,18 @@ info: downloading installer
 ...
 ----
 
+=== Rust Compilation Process
+
+The process can be seen at <<#img-ch01-02-compile-process>>.
+
+[#img-ch01-02-compile-process]
+.Rust Compilation Process
+[ditaa, target="rust-compilation-process"]
+----
+ +--------+             +---------+   +--------------+   +----------+   +------------+
+ |        |             | Lexing  |   |              |   |          |   |            |
+ | Source | Invocation  | and     |   | AST lowering |   | MIR      |   | Code       |
+ | code   |------------>| parsing |-->| (HIR)        |-->| lowering |-->| generation |
+ |        |             |         |   |              |   |          |   |            |
+ +---+----+             +---------+   +--------------+   +----------+   +------------+
+----
