@@ -98,7 +98,7 @@ Again, you may also change the top directory name for *source code* in `book-tit
 
 ### Diagram
 
-Asciidoctor has an extension if we want to make a diagram using textual description (so-caleed *diagram as code*). To use this feature, install asciidoctor-diagram first. Do this if you haven't install it:
+Asciidoctor has an extension if we want to make a diagram using textual description (so-called *diagram as code*). To use this feature, install asciidoctor-diagram first. Do this if you haven't install it:
 
 ```
 $ gem install --user-install asciidoctor-diagram
