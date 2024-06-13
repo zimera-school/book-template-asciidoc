@@ -142,7 +142,7 @@ See also [the manual](https://docs.asciidoctor.org/diagram-extension/latest/)
 
 ## Appendix
 
-Put these (I made 2 examples of appendixes) at the end of `book-title.adoc`. Put appendix inside the files which has been described at `book-title.adoc`
+Put these (I made 2 examples of appendices) at the end of `book-title.adoc`. Put appendix inside the files which has been described at `book-title.adoc`
 
 ```asciidoc
 [appendix]
