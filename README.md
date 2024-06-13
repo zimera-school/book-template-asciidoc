@@ -140,6 +140,34 @@ $
 
 See also [the manual](https://docs.asciidoctor.org/diagram-extension/latest/)
 
+## Appendix
+
+Put these (I made 2 examples of appendixes) at the end of `book-title.adoc`. Put appendix inside the files which has been described at `book-title.adoc`
+
+```asciidoc
+[appendix]
+include::{includedir}/03-01-appendix.adoc[]
+
+[appendix]
+include::{includedir}/03-02-appendix.adoc[]
+```
+
+And here's an example of appendix:
+
+```asciidoc
+= First Appendix
+
+=== Part 1 of first appendix
+
+This is just an example of first - first appendix.
+
+=== Part 2 of first appendix
+
+And this on is an example of second - first appendix.
+```
+
+See also [03-02-appendix.adoc](contents/03-02-appendix.adoc)
+
 ## More
 
 If you want to change the layout (fonts, logo, etc):
