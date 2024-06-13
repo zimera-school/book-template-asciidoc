@@ -168,6 +168,26 @@ And this on is an example of second - first appendix.
 
 See also [03-02-appendix.adoc](contents/03-02-appendix.adoc)
 
+## Glossary
+
+Put this at the end of `book-title.adoc`. Put glossary inside the file which has been described at `book-title.adoc`
+
+```asciidoc
+[glossary]
+= Glossary
+
+[glossary]
+include::{includedir}/additional-03-glossary.adoc[]
+```
+
+And here's an example of glossary:
+
+```asciidoc
+terminology 1:: terminology no 1 is an example of glossary
+terminology 2::
+  terminology no 2 is an example of glossary
+```
+
 ## More
 
 If you want to change the layout (fonts, logo, etc):
