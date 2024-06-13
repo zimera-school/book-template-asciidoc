@@ -19,6 +19,8 @@ v0.0.1-rev-{localdatetime}
 :chapter-signifier: Chapter
 :figure-caption: Figure 
 :icons: font
+// default: Appendix, this one is used to change into "Supplement"
+:appendix-caption: Supplement
 ////
 Use this if you create a full cover in one page
 :front-cover-image: image::./images/title_page.png[]
@@ -52,4 +54,10 @@ Describe part II of the book briefly here.
 include::{includedir}/02-01-title.adoc[]
 
 include::{includedir}/02-02-title.adoc[]
+
+[appendix]
+include::{includedir}/03-01-appendix.adoc[]
+
+[appendix]
+include::{includedir}/03-02-appendix.adoc[]
 
