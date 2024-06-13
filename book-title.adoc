@@ -56,8 +56,14 @@ include::{includedir}/02-01-title.adoc[]
 include::{includedir}/02-02-title.adoc[]
 
 [appendix]
-include::{includedir}/03-01-appendix.adoc[]
+include::{includedir}/additional-01-appendix.adoc[]
 
 [appendix]
-include::{includedir}/03-02-appendix.adoc[]
+include::{includedir}/additional-02-appendix.adoc[]
+
+[glossary]
+= Glossary
+
+[glossary]
+include::{includedir}/additional-03-glossary.adoc[]
 
