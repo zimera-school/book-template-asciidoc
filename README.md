@@ -96,6 +96,42 @@ Again, you may also change the top directory name for *source code* in `book-tit
 
 **Note**: remove **linenums** in **[source,rust,linenums]** if you don't want to use line numbering in source code.
 
+### Bibliography
+
+See [example of bibliography file](contents/additional-00-bibliography.adoc):
+
+```asciidoc
+== References
+
+* [[[PragProg1999]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer: From Journeyman to Master. Addison-Wesley. 1999.
+* [[[RustBook2023]]] Steve Klabnik and Carol Nichols. The Rust programming language. No Starch Press, 2023.
+```
+
+Inside `book-title.addoc`, put the filename:
+
+```asciidoc
+[bibliography]
+include::{includedir}/additional-00-bibliography.adoc[]
+```
+
+In document where we want to cite the reference (see the mark on the References above, should be the same with the citation):
+
+```asciidoc
+...
+... let's pretend that this part is cited from <<PragProg1999>>. ...
+...
+... Of course, never let the Rust book left behind <<RustBook2023>>....
+...
+```
+
+Result in document:
+
+![Result of index in Index page](images/non-book-contents/bib-inside-the-document.png)
+
+Result in **References**:
+
+![Result in References](images/non-book-contents/bib-result-page.png)
+
 ### Diagram
 
 Asciidoctor has an extension if we want to make a diagram using textual description (so-called *diagram as code*). To use this feature, install asciidoctor-diagram first. Do this if you haven't install it:
@@ -124,7 +160,7 @@ The process can be seen at <<#img-ch01-02-compile-process>>.
 ----
 ```
 
-The result will be generated on-the-fly (filename will be the same as defined in `target` + .png). The image will be generated and saved at the location which has been defined in [main file](book-title.adoc). In this case, the location is:
+The result will be generated on-the-fly (filename will be the same as defined in `target` + .png). The image will be generated and saved at the location which has been defined in `book-title.adoc`. In this case, the location is:
 
 ```asciidoc
 :imagesoutdir: images/cache
@@ -145,7 +181,7 @@ $
 
 See also [the manual](https://docs.asciidoctor.org/diagram-extension/latest/)
 
-## Appendix
+### Appendix
 
 Put these (I made 2 examples of appendices) at the end of `book-title.adoc`. Put appendix inside the files which has been described at `book-title.adoc`
 
@@ -173,7 +209,7 @@ And this on is an example of second - first appendix.
 
 See also [03-02-appendix.adoc](contents/03-02-appendix.adoc)
 
-## Glossary
+### Glossary
 
 Put this at the end of `book-title.adoc`. Put glossary inside the file which has been described at `book-title.adoc`
 
@@ -193,7 +229,7 @@ terminology 2::
   terminology no 2 is an example of glossary
 ```
 
-## Index
+### Index
 
 If you want to create index, make sure that your build destination file is PDF (asciidoctor-pdf) since Asciidoctor will not produce index for HTML5 output. Basically, what you will do is:
 
@@ -222,7 +258,7 @@ For any other source which doesn't relate to source code in programming language
 ...
 ```
 
-To define where Index will be printed, put this inside [main file](book-title.adoc):
+To define where Index will be printed, put this inside `book-title.adoc``:
 
 ```asciidoc
 [index]

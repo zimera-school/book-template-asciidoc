@@ -57,6 +57,9 @@ include::{includedir}/02-01-title.adoc[]
 
 include::{includedir}/02-02-title.adoc[]
 
+[bibliography]
+include::{includedir}/additional-00-bibliography.adoc[]
+
 [appendix]
 include::{includedir}/additional-01-appendix.adoc[]
 
