@@ -127,7 +127,7 @@ The process can be seen at <<#img-ch01-02-compile-process>>.
 The result will be generated on-the-fly (filename will be the same as defined in `target` + .png). The image will be generated and saved at the location which has been defined in [main file](book-title.adoc). In this case, the location is:
 
 ```asciidoc
-:imagesoutdit: images/cache
+:imagesoutdir: images/cache
 ```
 
 The result is:
