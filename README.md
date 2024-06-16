@@ -126,7 +126,7 @@ In document where we want to cite the reference (see the mark on the References 
 
 Result in document:
 
-![Result of index in Index page](images/non-book-contents/bib-inside-the-document.png)
+![Result of index in Index page](images/non-book-contents/bib-inside-document.png)
 
 Result in **References**:
 
