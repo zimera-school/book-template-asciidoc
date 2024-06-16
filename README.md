@@ -222,13 +222,20 @@ For any other source which doesn't relate to source code in programming language
 ...
 ```
 
+To define where Index will be printed, put this inside [main file](book-title.adoc):
+
+```asciidoc
+[index]
+== Index
+```
+
 The resulting document will be clean (no sign of index) but whenever reader click the page on the index result page, pointer will be directed to that page. The clean document:
 
-![Result of Diagram with ditaa](images/non-book-contents/index-resut-in-document.png)
+![Result of index in document](images/non-book-contents/index-result-in-document.png)
 
 The index result page:
 
-![Result of Diagram with ditaa](images/non-book-contents/index-result-in-index-page.png)
+![Result of index in Index page](images/non-book-contents/index-result-in-index-page.png)
 
 ## More
 
