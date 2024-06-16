@@ -2,7 +2,9 @@
 
 === Sub Seciton 1
 
-This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. 
+This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement. This is just a statement.
+
+In this chapter, I will give you an example of how to format source code (((source code, formatting, callout))) using AsciiDoctor.
 
 === See the Source Code Here
 
@@ -14,7 +16,7 @@ include::../{sourcedir}/01-02/hello-plain/hello.rs[]
 <1> Explanation - callout number 1.
 <2> Explanation - callout number 2.
 
-For any other source which doesn't relate to source code in programming language, use this:
+For any other source which doesn't relate to source code in programming language, use this: (((source code, formatting, shell display)))
 
 [source,bash]
 .rustup
@@ -27,7 +29,7 @@ info: downloading installer
 
 === Rust Compilation Process
 
-The process can be seen at <<#img-ch01-02-compile-process>>.
+((Rust compilation process)) can be seen at <<#img-ch01-02-compile-process>>.
 
 [#img-ch01-02-compile-process]
 .Rust Compilation Process

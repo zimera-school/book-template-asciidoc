@@ -15,7 +15,9 @@ v0.0.1-rev-{localdatetime}
               This template is only a template. This template is only a template.
 :sourcedir: src
 :includedir: contents
-:imagesdir: images
+:imagesdir: images/book-contents
+// below is used to save generated image from asciidoctor-diagram
+:imagesoutdir: images/cache
 :chapter-signifier: Chapter
 :figure-caption: Figure 
 :icons: font
@@ -67,3 +69,5 @@ include::{includedir}/additional-02-appendix.adoc[]
 [glossary]
 include::{includedir}/additional-03-glossary.adoc[]
 
+[index]
+== Index

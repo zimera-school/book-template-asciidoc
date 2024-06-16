@@ -78,7 +78,7 @@ title-page:
   font-size: 14
   font-style: bold
   logo:
-    image: image:{docdir}/images/logo-zimera-corp.png[width=200]
+    image: image:{docdir}/images/book-contents/logo-zimera-corp.png[width=200]
     top: 5%
 caption:
   align: center

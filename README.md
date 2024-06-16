@@ -106,7 +106,6 @@ $ gem install --user-install asciidoctor-diagram
 
 Example of source code:
 
-
 ```bash
 === Rust Compilation Process
 
@@ -125,18 +124,24 @@ The process can be seen at <<#img-ch01-02-compile-process>>.
 ----
 ```
 
-The result will be generated on-the-fly (filename will be the same as defined in `target` + .png):
+The result will be generated on-the-fly (filename will be the same as defined in `target` + .png). The image will be generated and saved at the location which has been defined in [main file](book-title.adoc). In this case, the location is:
+
+```asciidoc
+:imagesoutdit: images/cache
+```
+
+The result is:
 
 ```bash
-$ ls -la build/images/
+$ ls -la images/cache/
 total 20
-drwxr-xr-x 2 bpdp bpdp 4096 Jun  8 11:15 ./
-drwxr-xr-x 4 bpdp bpdp 4096 Jun  8 10:38 ../
--rw-r--r-- 1 bpdp bpdp 9288 Jun  8 11:15 rust-compilation-process.png
+drwxr-xr-x 2 bpdp bpdp 4096 Jun 16 13:03 ./
+drwxr-xr-x 5 bpdp bpdp 4096 Jun 16 12:58 ../
+-rw-r--r-- 1 bpdp bpdp 9288 Jun 16 13:03 rust-compilation-process.png
 $
 ```
 
-![Result of Diagram with ditaa](images/result-diagram.png)
+![Result of Diagram with ditaa](images/non-book-contents/result-diagram.png)
 
 See also [the manual](https://docs.asciidoctor.org/diagram-extension/latest/)
 
@@ -187,6 +192,43 @@ terminology 1:: terminology no 1 is an example of glossary
 terminology 2::
   terminology no 2 is an example of glossary
 ```
+
+## Index
+
+If you want to create index, make sure that your build destination file is PDF (asciidoctor-pdf) since Asciidoctor will not produce index for HTML5 output. Basically, what you will do is:
+
+1.  Define index at any source Asciidoctor document.
+2.  Define where Asciidoctor should print the index in your main file.
+
+To define index in any source Asciidoctor document:
+
+[See source file](contents/01-02-title.adoc)
+
+```asciidoc
+...
+...
+...
+In this chapter, I will give you an example of how to format source code (((source code, formatting, callout))) using AsciiDoctor.
+...
+...
+...
+For any other source which doesn't relate to source code in programming language, use this: (((source code, formatting, shell display)))
+...
+...
+...
+((Rust compilation process)) can be seen at <<#img-ch01-02-compile-process>>.
+...
+...
+...
+```
+
+The resulting document will be clean (no sign of index) but whenever reader click the page on the index result page, pointer will be directed to that page. The clean document:
+
+![Result of Diagram with ditaa](images/non-book-contents/index-resut-in-document.png)
+
+The index result page:
+
+![Result of Diagram with ditaa](images/non-book-contents/index-result-in-index-page.png)
 
 ## More
 

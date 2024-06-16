@@ -1,4 +1,7 @@
-# Some Remarks
+# About
 
-The file `logo.png` is the same as `logo-zimera.png` by intention. Just change one or both file with yours. The file `logo.png` is meant as the book logo (let's say, you may use Rust logo if you make Rust book, Go logo if you make Go book, etc). The file `logo-zimera.png` is meant as the organization logo (your company, your community, whatever).
+There are three directories:
 
+1.  book-contents: image from contents of the book (just some examples)
+2.  non-book-contents: images which are not part of the book (examples: image for README.md in root of this project)
+3.  cache: dir to save generated file from asciidoctor-diagram
