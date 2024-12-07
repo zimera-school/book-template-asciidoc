@@ -17,12 +17,12 @@ $ gem list --local | grep asciidoctor
 asciidoctor (2.0.23)
 asciidoctor-bibliography (0.11.0)
 asciidoctor-bibtex (0.9.0)
-asciidoctor-diagram (2.3.0)
+asciidoctor-diagram (2.3.1)
 asciidoctor-diagram-batik (1.17)
 asciidoctor-diagram-ditaamini (1.0.3)
-asciidoctor-diagram-plantuml (1.2024.5)
+asciidoctor-diagram-plantuml (1.2024.8)
 asciidoctor-epub3 (2.1.3)
-asciidoctor-pdf (2.3.17)
+asciidoctor-pdf (2.3.19)
 asciidoctor-rouge (0.4.0)
 $
 ```
@@ -107,7 +107,7 @@ See [example of bibliography file](contents/additional-00-bibliography.adoc):
 * [[[RustBook2023]]] Steve Klabnik and Carol Nichols. The Rust programming language. No Starch Press, 2023.
 ```
 
-Inside `book-title.addoc`, put the filename:
+Inside `book-title.adoc`, put the filename:
 
 ```asciidoc
 [bibliography]
