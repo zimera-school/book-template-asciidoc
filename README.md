@@ -132,9 +132,6 @@ asciidoctor-lazy-images (0.0.6)
 asciidoctor-legal (0.0.1)
     Extensions and features tailred at writing legal documents like
     patents and contracts.
-asciidoctor-lists (1.1.2)
-    An asciidoctor extension that adds a list of figures, a list of
-    tables, or a list of anything you want!
 asciidoctor-m3d (0.3.6)
     asciidoctor-m3d lets you write M3AAWG Documents (M3D) in AsciiDoc.
 asciidoctor-mathematical (0.3.5)
