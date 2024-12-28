@@ -505,7 +505,7 @@ page:
 ...
 ```
 
-We will use normal numbering, started from page 5 (after table of contents and lists). You may need to adjust this number once you finish compilation process (check the page number which mark the end of front page and adjust accordingly. See [the manual](https://docs.asciidoctor.org/pdf-converter/latest/theme/page-numbers/).
+We will use normal numbering, started from page 5 (after table of contents and lists). You may need to adjust this number once you finish compilation process (check the page number which mark the end of front page and adjust accordingly). See [the manual](https://docs.asciidoctor.org/pdf-converter/latest/theme/page-numbers/).
 
 ## More
 
