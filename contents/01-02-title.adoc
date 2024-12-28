@@ -8,8 +8,8 @@ In this chapter, I will give you an example of how to format source code (((sour
 
 === See the Source Code Here
 
-[source,rust,linenums]
 .src/01-02/hello-plain/hello.rs
+[source,rust,linenums]
 ----
 include::../{sourcedir}/01-02/hello-plain/hello.rs[]
 ----
@@ -18,8 +18,8 @@ include::../{sourcedir}/01-02/hello-plain/hello.rs[]
 
 For any other source which doesn't relate to source code in programming language, use this: (((source code, formatting, shell display)))
 
-[source,bash]
 .rustup
+[source,bash]
 ----
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 info: downloading installer

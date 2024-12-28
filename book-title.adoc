@@ -29,6 +29,21 @@ Use this if you create a full cover in one page
 ////
 //:title-logo-image: images/logo-zimera.png
 
+:listing-caption: Code
+
+:sectnums!:
+== List of figures
+list-of::image[]
+<<<
+
+== List of tables
+list-of::table[]
+<<<
+
+== List of code snippets
+list-of::listing[]
+<<<
+:sectnums:
 
 [preface]
 = Preface 

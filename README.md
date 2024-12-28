@@ -22,6 +22,7 @@ asciidoctor-diagram-batik (1.17)
 asciidoctor-diagram-ditaamini (1.0.3)
 asciidoctor-diagram-plantuml (1.2024.8)
 asciidoctor-epub3 (2.1.3)
+asciidoctor-lists (1.1.2)
 asciidoctor-pdf (2.3.19)
 asciidoctor-rouge (0.4.0)
 $
@@ -226,18 +227,10 @@ Above extensions are not used in this template but feel free to use in your book
 
 ## Compiling to PDF
 
-Use `Makefile`. The result will be in [build](build/) directory. I also made an example of diagram (as code - using [ditaa](https://github.com/pepijnve/ditaa)) but this is purely optional. Just pay attention to how we compile document with or without diagram below.
-
-### Without Diagram
+Use `Makefile`. The result will be in [build](build/) directory. I also made an example of diagram (as code - using [ditaa](https://github.com/pepijnve/ditaa)) but this is purely optional. Please read [Makefile](Makefile) first. If you don't require diagram you don't need to use `-r asciidoctor-diagram` in the Makefile and bypass the diagram example below.
 
 ```bash
 $ make
-```
-
-### With Diagram
-
-```bash
-$ make all-with-diagram
 ```
 
 ## Using This Template
@@ -339,6 +332,8 @@ $ gem install --user-install asciidoctor-diagram
 
 Example of source code:
 
+[contents/01-02-title.adoc](contents/01-02-title.adoc)
+
 ```bash
 === Rust Compilation Process
 
@@ -364,6 +359,8 @@ The result will be generated on-the-fly (filename will be the same as defined in
 ```
 
 The result is:
+
+[images/cache/rust-compilation-process.png](images/cache/rust-compilation-process.png)
 
 ```bash
 $ ls -la images/cache/
@@ -469,6 +466,49 @@ The resulting document will be clean (no sign of index) but whenever reader clic
 The index result page:
 
 ![Result of index in Index page](images/non-book-contents/index-result-in-index-page.png)
+
+## Lists
+
+This template uses [asciidoctor-lists](https://github.com/Alwinator/asciidoctor-lists) for list of figures, tables, and source codes. Snippet from [book-title.adoc](book-title.adoc):
+
+```asciidoc
+...
+...
+:listing-caption: Code
+
+:sectnums!:
+== List of figures
+list-of::image[]
+<<<
+
+== List of tables
+list-of::table[]
+<<<
+
+== List of code snippets
+list-of::listing[]
+<<<
+:sectnums:
+...
+...
+```
+
+`:sectnums!` is used to turn off section number (since it should not be a part of contents). `<<<` is used for page break. Also see [theme description](resources/themes/zimera-theme.yaml) to understand page numbering between front cover and contents of the book. Take a look at this snippet:
+
+```yaml
+...
+...
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+  size: Letter
+  numbering:
+    start-at: 5
+...
+...
+```
+
+We will use normal numbering, started from page 5 (after table of contents and lists). You may need to adjust this number once you finish compilation process (check the page number which mark the end of front page and adjust accordingly. See [the manual](https://docs.asciidoctor.org/pdf-converter/latest/theme/page-numbers/).
 
 ## More
 
