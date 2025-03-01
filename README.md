@@ -20,7 +20,7 @@ asciidoctor-bibtex (0.9.0)
 asciidoctor-diagram (2.3.1)
 asciidoctor-diagram-batik (1.17)
 asciidoctor-diagram-ditaamini (1.0.3)
-asciidoctor-diagram-plantuml (1.2024.8)
+asciidoctor-diagram-plantuml (1.2025.1)
 asciidoctor-epub3 (2.1.3)
 asciidoctor-lists (1.1.2)
 asciidoctor-pdf (2.3.19)
@@ -28,19 +28,21 @@ asciidoctor-rouge (0.4.0)
 $
 ```
 
-You may as well install other Asciidoctor extensions. Search rubygems for asciidoctor and you may find some extensions below:
+You may as well install other Asciidoctor extensions. Search rubygems for `asciidoctor-` or `asciiidoctor_`  or `_asciidoctor` and you may find some extensions below:
 
 ```bash
+asciidoctor-bibliography (0.11.0)
+    Citations and bibliography the "asciidoctor-way"
+asciidoctor-bibtex (0.9.0)
+    An Asciidoctor extension that adds bibtex integration to AsciiDoc
 asciidoctor-bilibili (0.0.0)
     哔哩哔哩 (゜-゜)つロ 干杯~
 asciidoctor-boost (0.1.7)
-    Author: Dave O'Connor
     Asciidoctor macros for Boost documentation
 asciidoctor-chart (1.0.0)
     Adds a chart block and block macro to AsciiDoc
 asciidoctor-comment-links (0.0.2)
-    Turn the link in the comment of the source block into a clickable
-    jump link.
+    Turn the link in the comment of the source block into a clickable jump link.
 asciidoctor-confluence (0.0.2)
     Publishing Asciidoctor content as Confluence page
 asciidoctor-confluence-fix (0.0.3)
@@ -50,30 +52,41 @@ asciidoctor-confluence-sy (0.1.0)
 asciidoctor-confluence_publisher (0.1.1)
     Parse asciidoc and publish the document to confluence.
 asciidoctor-csand (0.3.4)
-    asciidoctor-csand lets you write CSA Normal Documents (CSAND) in
-    AsciiDoc.
+    asciidoctor-csand lets you write CSA Normal Documents (CSAND) in AsciiDoc.
 asciidoctor-csd (0.4.6)
     asciidoctor-csd lets you write CSD in AsciiDoc.
-asciidoctor-defmastership (1.2.0)
+asciidoctor-defmastership (1.3.0)
     asciidoctor extension to handle applicable definition references
+asciidoctor-diagram (2.3.1, 1.2.1)
+    A family of Asciidoctor extensions that generate images from a broad
+    range of embedded plain text diagram descriptions, including
+    PlantUML, ditaa, Kroki, and many others.
+asciidoctor-diagram-batik (1.17)
+    Apache™ Batik SVG Toolkit JAR files wrapped in a Ruby gem
 asciidoctor-diagram-cacoo (0.2.2)
     a ruby gem for asciidoctor-diagram to use Cacoo diagrams
+asciidoctor-diagram-ditaamini (1.0.3)
+    Ditaa JAR files wrapped in a Ruby gem
 asciidoctor-diagram-eralchemy (0.1.0)
     Asciidoctor ERAlchemy extension
 asciidoctor-diagram-jsyntrax (1.38.2)
     JSyntrax JAR files wrapped in a Ruby gem
 asciidoctor-diagram-office (0.1.2)
     Asciidoctor diagram extension, with support for Office documents
+asciidoctor-diagram-plantuml (1.2025.1)
+    PlantUML JAR files wrapped in a Ruby gem
 asciidoctor-diagram-stupid (0.1.0)
     Generate Stupid diagrams with Asciidoctor.
-asciidoctor-dita-topic (1.0.9)
+asciidoctor-dita-topic (1.1.0)
     A custom AsciiDoc converter that generates individual DITA topics
 asciidoctor-doctest (1.5.2.0)
     Test suite for Asciidoctor backends
+asciidoctor-epub3 (2.1.3)
+    Converts AsciiDoc documents to EPUB3 e-book format
 asciidoctor-external-callout (1.2.1)
     Asciidoc extension for adding callouts without marking up the source
     listing block.
-asciidoctor-fb2 (0.7.0)
+asciidoctor-fb2 (0.8.0)
     Converts AsciiDoc documents to FB2 e-book formats
 asciidoctor-fixxrefs (0.0.1)
     Asciidoctor fix xrefs
@@ -81,7 +94,7 @@ asciidoctor-foodogsquared-extensions (1.2.1)
     foo-dogsquared's custom Asciidoctor extensions
 asciidoctor-gb (0.3.7)
     asciidoctor-gb lets you write GB standards in AsciiDoc.
-asciidoctor-git-include (1.2.0)
+asciidoctor-git-include (1.3.0)
     Fetch files from Git repositories while rendering asciidoc files.
 asciidoctor-github-include (0.0.2)
     Fetch files from private GitHub repos when you render your asciidoc
@@ -132,6 +145,9 @@ asciidoctor-lazy-images (0.0.6)
 asciidoctor-legal (0.0.1)
     Extensions and features tailred at writing legal documents like
     patents and contracts.
+asciidoctor-lists (1.1.2)
+    An asciidoctor extension that adds a list of figures, a list of
+    tables, or a list of anything you want!
 asciidoctor-m3d (0.3.6)
     asciidoctor-m3d lets you write M3AAWG Documents (M3D) in AsciiDoc.
 asciidoctor-mathematical (0.3.5)
@@ -153,10 +169,12 @@ asciidoctor-nabetani (0.1.4)
 asciidoctor-p2e (0.3.0)
     An Asciidoctor extension for creating content for the Pathfinder 2E
     roleplaying system.
+asciidoctor-pdf (2.3.19)
+    Converts AsciiDoc documents to PDF using Asciidoctor and Prawn
 asciidoctor-pdf-cjk (0.1.3)
     asciidoctor-pdf CJK extension
 asciidoctor-pdf-cjk-kai_gen_gothic (0.1.1)
-
+    Author: Rei
 asciidoctor-pdf-cjk-kaigen-gothic-kr (0.1.1)
 
 asciidoctor-pdf-linewrap-ja (0.8.0)
@@ -178,6 +196,8 @@ asciidoctor-revealjs (5.2.0)
     AsciiDoc!
 asciidoctor-rfc (0.9.2)
     asciidoctor-rfc lets you write Internet-Drafts and RFCs in AsciiDoc.
+asciidoctor-rouge (0.4.0)
+    Rouge code highlighter support for Asciidoctor
 asciidoctor-rsd (0.3.6)
     asciidoctor-rsd lets you write RSD in AsciiDoc.
 asciidoctor-rubyeval (1.0.0)
@@ -185,7 +205,7 @@ asciidoctor-rubyeval (1.0.0)
 asciidoctor-sail (0.2)
     An Asciidoctor extension that supports including formatted Sail
     source in ISA manuals
-asciidoctor-server (0.4.0)
+asciidoctor-server (0.4.3)
     Run asciidoctor as a server
 asciidoctor-templates-compiler (0.7.0)
     Compile templates-based Asciidoctor converter (backend) into a
@@ -196,23 +216,19 @@ asciidoctor-texnical (0.0.2)
     Asciidoctor STEM processor shelling out to latex
 asciidoctor-xml-ast (0.2.0)
     Converter for Asciidoctor syntax to XML
-asciidoctor_cjk_breaks (0.0.2)
-    Suppress line breaks between east asian characters
-faa-asciidoctor-extension (0.3)
-    faa asciidoctor extensions
-guard-asciidoctor (0.1.1)
-    asciidoctor guard
-jekyll_asciidoctor_pdf (0.3.3)
-    Rake tasks to convert *.adoc files from Jekyll to PDF using
-    asciidoctor-pdf
-nanoc-asciidoctor (2.0.2)
-    (Obsolete) Asciidoctor filter for Nanoc
 asciidoctor-youtube (0.0.0)
     Automatic aspect ratio
 faa-asciidoctor-extension (0.3)
     faa asciidoctor extensions
 neo4j-asciidoctor-extensions (1.0.2)
     Asciidoctor extensions by Neo4j.
+asciidoctor_cjk_breaks (0.0.2)
+    Suppress line breaks between east asian characters
+avm-eac_asciidoctor_base0 (0.25.0)
+
+jekyll_asciidoctor_pdf (0.3.3)
+    Rake tasks to convert *.adoc files from Jekyll to PDF using
+    asciidoctor-pdf
 rake_jekyll_asciidoctor_pdf (0.0.13)
     Rake tasks to convert *.adoc files from Jekyll to PDF using
     asciidoctor-pdf
